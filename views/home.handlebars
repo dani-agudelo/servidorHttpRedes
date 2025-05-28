@@ -1,0 +1,26 @@
+<div id="game">
+  <!-- Lámpara con la frase de bienvenida -->
+  <div class="triangle-container">
+    <div class="toggle"></div>
+    <div class="transform-element">
+      <div class="cabe"></div>
+      <div class="ellipse3"></div>
+      <div class="mid"></div>
+      <div class="ellipse2"></div>
+      <div class="hole"></div>
+    </div>
+  </div>
+
+  <!-- Mensaje de bienvenida y la IP -->
+  <h1 style="color: {{#if primeraVisita}}#00796b{{else}}#333{{/if}}">
+    {{#if primeraVisita}}¡Hola!{{else}}Bienvenido a nuestra página{{/if}}
+  </h1>
+
+  {{#if primeraVisita}}
+    <p style="font-size:1.2rem; color:#004d40;">Es la primera vez que nos visitas.</p>
+  {{/if}}
+
+  <p style="font-size:1.2rem; color: {{#if primeraVisita}}#004d40{{else}}#555{{/if}}">
+    Tu IP es: {{ip}}
+  </p>
+</div>

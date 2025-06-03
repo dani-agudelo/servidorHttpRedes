@@ -18,9 +18,11 @@
 
   {{#if primeraVisita}}
     <p style="font-size:1.2rem; color:#004d40;">Es la primera vez que nos visitas.</p>
+  {{else}}
+    <p style="font-size:1.2rem; color:#555;">Nos has visitado {{contador}} veces.</p>
+    <p style="font-size:1.2rem; color:#555;">Tu última visita fue: {{ultimaVisita}}</p>
   {{/if}}
 
-  <p style="font-size:1.2rem; color: {{#if primeraVisita}}#004d40{{else}}#555{{/if}}">
-    Tu IP es: {{ip}}
+  <p style="font-size:1.2rem; color: {{#if primeraVisita}}#004d40{{else}}#555{{/if}};"> Tu IP es: {{ip}}
   </p>
 </div>

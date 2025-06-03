@@ -63,6 +63,6 @@ app.get('/', async (req, res) => {
 });
 
 // Iniciar servidor
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Servidor escuchando en http://0.0.0.0:${port}`);
+app.listen(port, '::', () => {
+  console.log(`Servidor escuchando en http://[::]:${port}`);
 });
